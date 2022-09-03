@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.zyl.learn.hibernate.xml.entity.many2many.Student" table="student">
+        <id name="id" type="java.lang.Integer" column="id">
+            <generator class="identity"></generator>
+        </id>
+        <property name="name" type="java.lang.String" column="name" />
+        <set name="courses" table="course_student" lazy="true">
+            <key column="sid"></key>
+            <many-to-many class="com.zyl.learn.hibernate.xml.entity.many2many.Course" column="cid"></many-to-many>
+        </set>
+
+    </class>
+</hibernate-mapping>
