@@ -19,5 +19,6 @@ public class Main {
         TeacherVisitor teacherVisitor = new TeacherVisitor();
         computer.accept(teacherVisitor);
         System.out.println(teacherVisitor.totalPrice);
+        System.out.println("-----");
     }
 }
