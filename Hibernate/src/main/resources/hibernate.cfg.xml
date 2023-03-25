@@ -42,7 +42,7 @@
                 <property name="format_sql">false</property>
 
                 <!-- 自动生成和更新数据表 -->
-                <property name="hibernate.hbm2ddl.auto">update</property>
+<!--                <property name="hibernate.hbm2ddl.auto">update</property>-->
 
                 <!-- 注册实体关系映射文件 -->
                 <mapping resource="com/zyl/learn/hibernate/xml/entity/single/People.hbm.xml"></mapping>
@@ -50,5 +50,6 @@
                 <mapping resource="com/zyl/learn/hibernate/xml/entity/one2many/Orders.hbm.xml"></mapping>
                 <mapping resource="com/zyl/learn/hibernate/xml/entity/many2many/Student.hbm.xml"></mapping>
                 <mapping resource="com/zyl/learn/hibernate/xml/entity/many2many/Course.hbm.xml"></mapping>
+                <mapping resource="com/zyl/learn/hibernate/xml/entity/one2many/OrderItem.hbm.xml"></mapping>
         </session-factory>
 </hibernate-configuration>

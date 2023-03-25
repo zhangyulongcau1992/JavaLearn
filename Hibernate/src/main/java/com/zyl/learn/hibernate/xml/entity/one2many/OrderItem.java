@@ -1,19 +1,17 @@
 package com.zyl.learn.hibernate.xml.entity.one2many;
 
-import java.util.Set;
-
 /**
- * ClassName:Customer
- * Package:com.zyl.learn.hibernate.entity
+ * ClassName:OrderItem
+ * Package:com.zyl.learn.hibernate.xml.entity.one2many
  * Description:
  *
- * @Date:2022/3/24 16:04
+ * @Date:2022/11/17 9:24
  * @Author:zhangyulong@qq.com
  */
-public class Customer {
+public class OrderItem {
     private Integer id;
     private String name;
-    private Set<Orders> orders;
+    private Orders orders;
 
     public Integer getId() {
         return id;
@@ -31,17 +29,17 @@ public class Customer {
         this.name = name;
     }
 
-    public Set<Orders> getOrders() {
+    public Orders getOrders() {
         return orders;
     }
 
-    public void setOrders(Set<Orders> orders) {
+    public void setOrders(Orders orders) {
         this.orders = orders;
     }
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "OrderItem{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';

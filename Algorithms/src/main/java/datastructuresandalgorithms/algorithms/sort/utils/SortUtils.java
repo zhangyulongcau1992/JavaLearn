@@ -24,6 +24,7 @@ public class SortUtils {
             int[] arr2 = CommonUtils.arrayCopy(arrOrign);
             sortMethod.sort(arr1);
             Arrays.sort(arr2);
+
             if (!CommonUtils.arraySame(arr1, arr2)) {
                 isRight = false;
                 System.out.println("存在错误:");

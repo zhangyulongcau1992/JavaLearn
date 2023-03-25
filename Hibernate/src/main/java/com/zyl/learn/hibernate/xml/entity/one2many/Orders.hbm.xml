@@ -9,5 +9,9 @@
         </id>
         <property name="name" type="java.lang.String" column="name" />
         <many-to-one name="customer" class="com.zyl.learn.hibernate.xml.entity.one2many.Customer" lazy="proxy" column="cid"></many-to-one>
+        <set name="orderItems" table="order_item" lazy="true" cascade="save-update">
+            <key column="oid"></key>
+            <one-to-many class="com.zyl.learn.hibernate.xml.entity.one2many.OrderItem"></one-to-many>
+        </set>
     </class>
 </hibernate-mapping>

@@ -39,8 +39,8 @@ public class FileApply {
 //        System.out.println("文件删除成功？" + deleteResult);
         //2.2 使用jvm退出时删除
 //        file.deleteOnExit();
-//        Thread.sleep(5000);
-
+//             Thread.sleep(5000);
+    
         //3、获取文件信息
         System.out.println("文件的绝对路径：" + file.getAbsolutePath());
         System.out.println("文件的路径：" + file.getPath());
@@ -107,11 +107,20 @@ public class FileApply {
     }
 
     public static void main(String[] args) throws Exception {
-        FileApply apply = new FileApply();
-        apply.separator();
-        System.out.println("-------------------");
-        apply.fileOperation();
-        System.out.println("-------------------");
-        apply.directoryOperation();
+        // FileApply apply = new FileApply();
+        // apply.separator();
+        // System.out.println("-------------------");
+        // apply.fileOperation();
+        // System.out.println("-------------------");
+        // apply.directoryOperation();
+        String a = "abc-c";
+        String b = null;
+        if (null != a && a.contains("-")) {
+            b = a.split("-")[0];
+
+        } else {
+            b = a;
+        }
+        System.out.println(b);
     }
 }
