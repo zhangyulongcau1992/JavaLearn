@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaLearn.iml" filepath="$PROJECT_DIR$/JavaLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaWeb/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb/JavaWeb.iml" />
       <module fileurl="file://$PROJECT_DIR$/NewFeatures/NewFeatures.iml" filepath="$PROJECT_DIR$/NewFeatures/NewFeatures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring/Spring.iml" filepath="$PROJECT_DIR$/Spring/Spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
     </modules>
   </component>

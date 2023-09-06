@@ -1,0 +1,5 @@
+com\zyl\learn\javaweb\jdbc\entity\People.class
+com\zyl\learn\javaweb\jdbc\demo\Demo1.class
+com\zyl\learn\javaweb\jdbc\utils\CommonUtils.class
+com\zyl\learn\javaweb\jdbc\utils\JDBCUtils.class
+com\zyl\learn\javaweb\jdbc\utils\PropertiesReader.class

@@ -1,0 +1,10 @@
+com\zyl\learn\hibernate\xml\test\TestMany2Many.class
+com\zyl\learn\hibernate\xml\entity\one2many\Customer.class
+com\zyl\learn\hibernate\xml\entity\one2many\Orders.class
+com\zyl\learn\hibernate\xml\test\TestDeadLock.class
+com\zyl\learn\hibernate\xml\entity\many2many\Student.class
+com\zyl\learn\hibernate\xml\entity\single\People.class
+com\zyl\learn\hibernate\xml\entity\many2many\Course.class
+com\zyl\learn\hibernate\xml\entity\one2many\OrderItem.class
+com\zyl\learn\hibernate\xml\test\TestOne2Many.class
+com\zyl\learn\hibernate\xml\test\TestSingle.class
