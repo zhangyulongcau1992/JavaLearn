@@ -1,7 +1,7 @@
 package datastructuresandalgorithms.algorithms.sort.basic.impl;
 
 
-import datastructuresandalgorithms.algorithms.sort.SortInterface;
+import datastructuresandalgorithms.algorithms.sort.Sort;
 import datastructuresandalgorithms.algorithms.sort.utils.SortUtils;
 import datastructuresandalgorithms.utils.CommonUtils;
 
@@ -21,7 +21,7 @@ import java.util.List;
  * 排序方式：In-place
  * 稳定性：稳定
  */
-public class BubbleSort implements SortInterface {
+public class BubbleSort implements Sort {
     @Override
     public void sort(int[] arr) {
         if (arr == null || arr.length<2) {
@@ -45,10 +45,14 @@ public class BubbleSort implements SortInterface {
     public static void main(String[] args) {
         SortUtils.verify(new BubbleSort());
 
-        List<SortInterface> list = new ArrayList<SortInterface>();
+        List<Sort> list = new ArrayList<Sort>();
         list.add(new BubbleSort());
+        list.add(new HeapSort());
         list.add(new InsertionSort());
+        list.add(new MergeSort());
+        list.add(new QuickSort());
         list.add(new SelectionSort());
+        list.add(new ShellSort());
         SortUtils.efficiencyCompare(list);
     }
 

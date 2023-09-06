@@ -1,7 +1,7 @@
 package datastructuresandalgorithms.algorithms.sort.utils;
 
 
-import datastructuresandalgorithms.algorithms.sort.SortInterface;
+import datastructuresandalgorithms.algorithms.sort.Sort;
 import datastructuresandalgorithms.utils.CommonUtils;
 
 import java.util.Arrays;
@@ -15,7 +15,7 @@ public class SortUtils {
     private static final int MAX_LENGTH = 1000;
     private static final int MAX_VALUE = 1000;
 
-    public static void verify(SortInterface sortMethod) {
+    public static void verify(Sort sortMethod) {
         boolean isRight = true;
         int successNum = 0;
         for (int i = 0; i < CIRCULATE_TIMES; i++) {
@@ -30,7 +30,7 @@ public class SortUtils {
                 System.out.println("存在错误:");
                 System.out.println("原数组：" + Arrays.toString(arrOrign));
                 System.out.println("排序后：" + Arrays.toString(arr1));
-                System.out.println("应该为：" + arr2);
+                System.out.println("应该为：" + Arrays.toString(arr2));
                 System.out.println("成功数：" + successNum + "，总数为：" + CIRCULATE_TIMES);
                 break;
             }
@@ -41,7 +41,7 @@ public class SortUtils {
         }
     }
 
-    public static void efficiencyCompare(List<SortInterface> sortMethods) {
+    public static void efficiencyCompare(List<Sort> sortMethods) {
         long[] takeTimes = new long[sortMethods.size()];
         for (int i = 0; i < CIRCULATE_TIMES; i++) {
             int[] arrOrign = CommonUtils.randomArray(MAX_LENGTH, MAX_VALUE);

@@ -1,7 +1,7 @@
 package datastructuresandalgorithms.algorithms.sort.basic.impl;
 
 
-import datastructuresandalgorithms.algorithms.sort.SortInterface;
+import datastructuresandalgorithms.algorithms.sort.Sort;
 import datastructuresandalgorithms.algorithms.sort.utils.SortUtils;
 import datastructuresandalgorithms.utils.CommonUtils;
 
@@ -17,7 +17,7 @@ import datastructuresandalgorithms.utils.CommonUtils;
  * 排序方式：In-place
  * 稳定性：不稳定 [5, 5*, 2] --> [2, 5, 5*] --> [2, 5, 5*]
  */
-public class SelectionSort implements SortInterface {
+public class SelectionSort implements Sort {
     @Override
     public void sort(int[] arr) {
         if (arr == null || arr.length<2) {

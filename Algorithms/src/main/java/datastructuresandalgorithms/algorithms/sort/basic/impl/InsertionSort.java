@@ -1,7 +1,7 @@
 package datastructuresandalgorithms.algorithms.sort.basic.impl;
 
 
-import datastructuresandalgorithms.algorithms.sort.SortInterface;
+import datastructuresandalgorithms.algorithms.sort.Sort;
 import datastructuresandalgorithms.algorithms.sort.utils.SortUtils;
 
 /**
@@ -14,7 +14,7 @@ import datastructuresandalgorithms.algorithms.sort.utils.SortUtils;
  * 排序方式：In-place
  * 稳定性：稳定
  */
-public class InsertionSort implements SortInterface {
+public class InsertionSort implements Sort {
     @Override
     public void sort(int[] arr) {
         if (arr == null || arr.length<2) {
